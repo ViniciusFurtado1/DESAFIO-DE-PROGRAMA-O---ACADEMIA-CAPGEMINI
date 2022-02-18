@@ -10,7 +10,17 @@ class MainTest {
     }
 
     @Test
-    void testVerifyPassword() {
+    void testVerifyPassword1() {
         assertEquals(Main.verifyPassword("Ya3"), 3);
+    }
+
+    @Test
+    void testVerifyPassword2() {
+        assertEquals(Main.verifyPassword("Ya"), 4);
+    }
+
+    @Test
+    void testVerifyPassword3() {
+        assertEquals(Main.verifyPassword("Y"), 5);
     }
 }
