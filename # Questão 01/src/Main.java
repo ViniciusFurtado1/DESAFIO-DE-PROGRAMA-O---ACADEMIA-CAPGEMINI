@@ -15,11 +15,8 @@ public class Main {
      */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-
         int n = input.nextInt();
-
-        String result = String.valueOf(getStair(n));
-
+        String result = getStair(n).toString();
         System.out.println(result);
     }
 

@@ -10,7 +10,7 @@ class MainTest {
     }
 
     @Test
-    void testGetStair() {
+    void testGetStair1() {
         assertEquals(String.valueOf(Main.getStair(6)), """       
                                                                          *
                                                                         **
@@ -18,5 +18,27 @@ class MainTest {
                                                                       ****
                                                                      *****
                                                                     ******""");
+    }
+
+    @Test
+    void testGetStair2() {
+        assertEquals(String.valueOf(Main.getStair(3)), """       
+                                                                      *
+                                                                     **
+                                                                    ***""");
+    }
+
+    @Test
+    void testGetStair3() {
+        assertEquals(String.valueOf(Main.getStair(9)), """       
+                                                                            *
+                                                                           **
+                                                                          ***
+                                                                         ****
+                                                                        *****
+                                                                       ******
+                                                                      *******
+                                                                     ********
+                                                                    *********""");
     }
 }
