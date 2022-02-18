@@ -25,7 +25,18 @@ class MainTest {
     }
 
     @Test
-    void testGetNumOfAnagrams() {
+    void testGetNumOfAnagrams1() {
         assertEquals(Main.getNumOfAnagrams(Main.getAllSubstrings("ovo")), 2);
+    }
+
+    @Test
+    void testGetNumOfAnagrams2() {
+        assertEquals(Main.getNumOfAnagrams(Main.getAllSubstrings("ifailuhkqq")), 3);
+    }
+
+    @Test
+    void testGetNumOfAnagrams3() {
+        // [[i,i],[in,ni]]
+        assertEquals(Main.getNumOfAnagrams(Main.getAllSubstrings("capgemini")), 2);
     }
 }
